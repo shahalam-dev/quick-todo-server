@@ -18,7 +18,7 @@ mongoose.connect(uri, () => {
 console.log(uri);
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send(`quick todo runnig on port ${port}`);
 });
 
 app.post("/add-task", (req, res) => {
